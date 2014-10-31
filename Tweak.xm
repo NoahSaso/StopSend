@@ -31,7 +31,9 @@ static CKMessageEntryView* messageEntryView;
 	%orig;
 	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
 		if([self findKeyboard]) {
-			[[%c(CKMessageEntryView) sharedInstance] sendButton].enabled = ![[self findKeyboard] hasAutocorrectPrompt];
+            if([[self findKeyboard] respondsToSelector:@selector(hasAutocorrectPrompt)]) {
+                [[%c(CKMessageEntryView) sharedInstance] sendButton].enabled = ![[self findKeyboard] hasAutocorrectPrompt];
+            }
 		}
 	});
 }
