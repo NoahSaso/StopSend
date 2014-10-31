@@ -3,7 +3,7 @@ Name: StopSend
 Depends: mobilesubstrate
 Version: 0.0.1
 Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
-Maintainer: Sassoty <sassoty@gmail.com>
-Author: Sassoty <sassoty@gmail.com>
+Description: Disable Send button if autocorrect is active
+Maintainer: Sassoty & GSquared <sassoty@gmail.com>
+Author: Sassoty & GSquared <sassoty@gmail.com>
 Section: Tweaks
