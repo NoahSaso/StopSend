@@ -7,3 +7,4 @@ Description: Disable Send button if autocorrect is active
 Maintainer: Sassoty & GSquared <sassoty@gmail.com>
 Author: Sassoty & GSquared <sassoty@gmail.com>
 Section: Tweaks
+Depiction: http://repo.sassoty.com/deps.php?pkg=com.sassoty.stopsend
